@@ -2,6 +2,7 @@ const weatherForm = document.querySelector(".weatherForm");
 const cityInput=document.querySelector(".cityInput");
 const card = document.querySelector(".card");
 const apiKey="YZTAHBJ5WSFEXDCVM4FTZDBKD";
+const rickImg=document.querySelector(".rickImg");
 
 const date=new Date();
 const year=date.getFullYear();
@@ -15,6 +16,8 @@ weatherForm.addEventListener("submit",async event=>{
         try{
             const weatherData = await getWeatherData(city);
             displayWeatherInfo(weatherData);
+            rickImg.style.display="block";
+
         }
         catch(error){
             console.log(error);
@@ -66,11 +69,11 @@ function displayWeatherInfo(data){
     descDisplay.textContent=`${conditions}`;
     weatherEmoji.src=`https://raw.githubusercontent.com/visualcrossing/WeatherIcons/refs/heads/main/PNG/3rd%20Set%20-%20Color/${icon}.png`;  
 
-    cityDisplay.className="2xl:text-5xl text-8xl font-bold";
-    tempDisplay.className="2xl:text-[26px] text-6xl pt-2";
-    humidityDisplay.className="2xl:text-2xl font-bold text-5xl pt-2 mb-[25px] italic";
-    descDisplay.className="2xl:text-2xl font-bold text-5xl";
-    weatherEmoji.className="2xl:w-[100px] m-0 w-[300px]";
+    cityDisplay.className="cityDisplay md:text-5xl text-4xl font-bold";
+    tempDisplay.className="md:text-[26px] text-3xl pt-2";
+    humidityDisplay.className="md:text-md font-bold text-2xl pt-2 mb-[25px] italic";
+    descDisplay.className="md:text-md font-bold text-2xl";
+    weatherEmoji.className="md:w-[150px] m-0 w-[100px]";
     
     card.appendChild(cityDisplay);
     card.appendChild(tempDisplay);

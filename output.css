@@ -216,8 +216,14 @@
   .mb-\[25px\] {
     margin-bottom: 25px;
   }
+  .block {
+    display: block;
+  }
   .flex {
     display: flex;
+  }
+  .hidden {
+    display: none;
   }
   .table {
     display: table;
@@ -237,6 +243,15 @@
   .h-full {
     height: 100%;
   }
+  .w-5 {
+    width: calc(var(--spacing) * 5);
+  }
+  .w-\[20px\] {
+    width: 20px;
+  }
+  .w-\[80px\] {
+    width: 80px;
+  }
   .w-\[100px\] {
     width: 100px;
   }
@@ -245,6 +260,9 @@
   }
   .w-\[150px\] {
     width: 150px;
+  }
+  .w-\[160px\] {
+    width: 160px;
   }
   .w-\[170px\] {
     width: 170px;
@@ -257,6 +275,15 @@
   }
   .w-\[200px\] {
     width: 200px;
+  }
+  .w-\[220px\] {
+    width: 220px;
+  }
+  .w-\[230px\] {
+    width: 230px;
+  }
+  .w-\[250px\] {
+    width: 250px;
   }
   .w-\[300px\] {
     width: 300px;
@@ -272,6 +299,9 @@
   }
   .w-\[600px\] {
     width: 600px;
+  }
+  .w-\[2000px\] {
+    width: 2000px;
   }
   .w-auto {
     width: auto;
@@ -320,11 +350,26 @@
   .bg-green-500 {
     background-color: var(--color-green-500);
   }
+  .p-3 {
+    padding: calc(var(--spacing) * 3);
+  }
   .p-\[10px\] {
     padding: 10px;
   }
+  .px-2 {
+    padding-inline: calc(var(--spacing) * 2);
+  }
+  .px-3 {
+    padding-inline: calc(var(--spacing) * 3);
+  }
   .px-\[5px\] {
     padding-inline: 5px;
+  }
+  .py-3 {
+    padding-block: calc(var(--spacing) * 3);
+  }
+  .py-4 {
+    padding-block: calc(var(--spacing) * 4);
   }
   .pt-0 {
     padding-top: calc(var(--spacing) * 0);
@@ -459,6 +504,26 @@
       height: 60px;
     }
   }
+  .md\:h-\[400px\] {
+    @media (width >= 48rem) {
+      height: 400px;
+    }
+  }
+  .md\:h-\[450px\] {
+    @media (width >= 48rem) {
+      height: 450px;
+    }
+  }
+  .md\:h-\[500px\] {
+    @media (width >= 48rem) {
+      height: 500px;
+    }
+  }
+  .md\:h-\[600px\] {
+    @media (width >= 48rem) {
+      height: 600px;
+    }
+  }
   .md\:w-\[100px\] {
     @media (width >= 48rem) {
       width: 100px;
@@ -482,6 +547,11 @@
   .md\:w-\[425px\] {
     @media (width >= 48rem) {
       width: 425px;
+    }
+  }
+  .md\:w-\[600px\] {
+    @media (width >= 48rem) {
+      width: 600px;
     }
   }
   .md\:w-auto {

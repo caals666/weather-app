@@ -40,7 +40,6 @@ function getWeatherData(city){
 }
 
 function displayWeatherInfo(data){
-    console.log(data);
     const {
     address, 
     currentConditions: {

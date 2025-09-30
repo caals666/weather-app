@@ -234,6 +234,9 @@
   .h-\[125px\] {
     height: 125px;
   }
+  .h-full {
+    height: 100%;
+  }
   .w-\[100px\] {
     width: 100px;
   }
@@ -386,6 +389,12 @@
   }
   .text-\[26px\] {
     font-size: 26px;
+  }
+  .text-\[60px\] {
+    font-size: 60px;
+  }
+  .text-\[96px\] {
+    font-size: 96px;
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);

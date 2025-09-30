@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+p{
+    margin:5px 0px;
+}
+
+.card{
+    background: linear-gradient(180deg, rgb(193, 206, 10), rgba(158, 5, 247, 0.925));
+    padding:50px;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.5);
+}   

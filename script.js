@@ -67,11 +67,11 @@ function displayWeatherInfo(data){
     descDisplay.textContent=`${conditions}`;
     weatherEmoji.src=`https://raw.githubusercontent.com/visualcrossing/WeatherIcons/refs/heads/main/PNG/3rd%20Set%20-%20Color/${icon}.png`;  
 
-    cityDisplay.className="text-5xl font-bold";
-    humidityDisplay.className="font-bold text-2xl mb-[25px] italic";
-    descDisplay.className="font-bold text-2xl";
-    weatherEmoji.className="m-0 h-[125px]";
-    tempDisplay.className="pt-2 text-[26px]";
+    cityDisplay.className="2xl:text-5xl text-8xl font-bold";
+    tempDisplay.className="2xl:text-[26px] text-6xl pt-2";
+    humidityDisplay.className="2xl:text-2xl font-bold text-5xl pt-2 mb-[25px] italic";
+    descDisplay.className="2xl:text-2xl font-bold text-5xl";
+    weatherEmoji.className="2xl:w-[100px] m-0 w-[300px]";
     
     card.appendChild(cityDisplay);
     card.appendChild(tempDisplay);

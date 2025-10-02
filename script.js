@@ -2,7 +2,6 @@ const weatherForm = document.querySelector(".weatherForm");
 const cityInput=document.querySelector(".cityInput");
 const card = document.querySelector(".card");
 const apiKey="YZTAHBJ5WSFEXDCVM4FTZDBKD";
-const rickImg=document.querySelector(".rickImg");
 
 const date=new Date();
 const year=date.getFullYear();
@@ -16,7 +15,6 @@ weatherForm.addEventListener("submit",async event=>{
         try{
             const weatherData = await getWeatherData(city);
             displayWeatherInfo(weatherData);
-            rickImg.style.display="block";
 
         }
         catch(error){
